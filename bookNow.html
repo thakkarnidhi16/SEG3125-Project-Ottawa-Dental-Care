@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ottawa Dental Care - Book Now</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+          <img src="logo.jpg" alt="Ottawa Dental Care Logo">
+          <h1>Ottawa Dental Care</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="ourTeam.html">Our Team</a></li>
+            <li><a href="contactUs.html">Contact Us</a></li>
+            <li><a href="bookNow.html">Book Now</a></li>
+          </ul>
+        </nav>
+      </header>
+
+  <main>
+    <section class="book-now">
+
+      <div class="registration">
+        <p><strong>Patient Registration</strong></p>
+      </div>
+      
+      <form action="bookingConfirmed.html" method="post" onsubmit="redirectToBookingConfirmed()">
+  <div class="form">
+    <label for="firstName">First Name</label>
+    <input type="text" name="firstName" id="firstName" placeholder="First Name">
+    
+    <label for="lastName">Last Name</label>
+    <input type="text" name="lastName" id="lastName" placeholder="Last Name">
+    
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" placeholder="Email">
+    
+    <label for="birthDate">Date of Birth</label>
+    <input type="date" name="birthDate" id="birthDate" placeholder="Birth Date">
+    
+    <label for="address">Address</label>
+    <input type="text" name="address" id="address" placeholder="Address">
+    
+    <label for="postalCode">Postal Code</label>
+    <input type="text" name="postalCode" id="postalCode" placeholder="Postal Code">
+    
+    <label for="city">City</label>
+    <input type="text" name="city" id="city" placeholder="City">
+    
+    <label for="province">Province</label>
+    <select name="province" id="province">
+      <option value="" disabled selected>Province</option>
+      <option value="AB">Alberta</option>
+      <option value="BC">British Columbia</option>
+      <option value="MB">Manitoba</option>
+      <option value="NB">New Brunswick</option>
+      <option value="NL">Newfoundland and Labrador</option>
+      <option value="NS">Nova Scotia</option>
+      <option value="ON">Ontario</option>
+      <option value="PE">Prince Edward Island</option>
+      <option value="QC">Quebec</option>
+      <option value="SK">Saskatchewan</option>
+    </select>
+    
+    <label for="date">Appointment Date</label>
+    <input type="date" name="date" id="date" placeholder="Date">
+    
+    <label for="services">Services</label>
+    <select name="services" id="services">
+      <option value="" disabled selected>Services</option>
+      <option value="Emergency Services">Emergency Services</option>
+      <option value="General Dentistry">General Dentistry</option>
+      <option value="Cosmetic Dentistry">Cosmetic Dentistry</option>
+      <option value="Dental Implants">Dental Implants</option>
+      <option value="Invisalign">Invisalign</option>
+      <option value="Exam and cleaning">Exam and Cleaning</option>
+    </select>
+    
+    <label for="preferredDoctor">Preferred Doctor</label>
+    <select name="preferredDoctor" id="preferredDoctor">
+      <option value="" disabled selected>Preferred Doctor</option>
+      <option value="doctor1">Dr. Thomas Fenton</option>
+      <option value="doctor2">Dr. Shan Thaker</option>
+    </select>
+    
+    <label for="availableAppointmentDate">Available Appointment Time</label>
+    <select name="availableAppointmentDate" id="availableAppointmentDate">
+      <option value="" disabled selected>Available Appointment Time</option>
+      <option value="date1">10 am</option>
+      <option value="date2">1 pm</option>
+      <option value="date3">2:30 pm</option>
+    </select>
+  </div>
+  <button class="book-button" type="submit">Book</button>
+
+  
+</form>
+
+
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-columns">
+        <div class="footer-column">
+          <h3>About Us</h3>
+          <p>
+            Dental Care Ottawa is a top-rated local practice for cosmetic, preventative, and restorative dentistry on First Hill. Visit us and expect the best care, gentle treatment, and beautiful results from your dentist!</p>
+        </div>
+        
+        <div class="footer-column">
+          <h3>Contact Us</h3>
+          <p>123 Main Street, Ottawa, ON, Canada</p>
+          <p>Phone: 123-456-7890</p>
+          <p>Email: info@ottawadentalcare.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 Ottawa Dental Care. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+\<script>
+    function redirectToBookingConfirmed() {
+      // JavaScript code to redirect the user to "bookingConfirmed.html"
+      window.location.href = "bookingConfirmed.html";
+    }
+    </script>
+</body>
+
+</html>
